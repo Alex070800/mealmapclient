@@ -1,0 +1,13 @@
+.day-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .card {
+    flex-grow: 1;
+    flex: 1 0 20%;
+  }
+}

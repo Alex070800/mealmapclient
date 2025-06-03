@@ -1,0 +1,57 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > * {
+    width: 35%;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+
+    font-style: normal;
+    line-height: 30px;
+  }
+  &__input-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    margin: 20px 0;
+
+    > label {
+      color: var(--text-secondary-color);
+    }
+  }
+
+  > .button {
+    margin-top: 30px;
+    // width: 100%;
+  }
+
+  > p {
+    margin-top: 20px;
+    text-wrap:wrap;
+    text-align: center;
+    color: var(--text-secondary-color);
+    > a {
+      text-decoration: underline;
+      color: var(--orange);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+  .login-page {
+    > * {
+      width: 100%;
+    }
+  }
+}

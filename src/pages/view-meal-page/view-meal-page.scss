@@ -1,0 +1,21 @@
+.view-meal-page {
+  &__dishes {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 600px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+    .view-meal-page{
+        &__dishes{
+            grid-template-columns: repeat(2, 1fr); 
+        }
+    }
+  }

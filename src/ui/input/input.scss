@@ -1,0 +1,135 @@
+.input {
+  width: 100%;
+  position: relative;
+  background-color: var(--background-color-input);
+  border-radius: 15px;
+  box-sizing: border-box;
+  min-height: 45px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid transparent;
+
+  > input {
+    font-family: "Poppins";
+    line-height: 24px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color-input);
+    background-color: transparent;
+
+    &:-internal-autofill-selected {
+      background-color: transparent !important;
+      background: none !important;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 15px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      > path {
+        stroke: var(--dark_grey);
+      }
+    }
+  }
+
+  > input:-webkit-autofill {
+    color: var(--black) !important;
+    -webkit-text-fill-color: var(--black) !important;
+    background-color: transparent !important;
+  }
+
+  > input:focus {
+    outline: none;
+  }
+
+  &_type {
+    &_text {
+      > input {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    &_longText {
+      height: 35vh;
+      justify-content: start;
+      align-items: start;
+      padding: 15px !important;
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        font-family: Nunito;
+        line-height: 24px;
+        font-size: 14px;
+
+        &:-internal-autofill-selected {
+          background-color: transparent !important;
+          background: none !important;
+        }
+      }
+    }
+
+    &_password {
+      > .button {
+        position: absolute;
+        right: 15px;
+        top: calc(50% - 9px);
+        width: 20px !important;
+        height: 20px !important;
+        min-height: 20px !important;
+        color: var(--font-color);
+
+        svg {
+          width: 18px;
+          height: 18px;
+          > * {
+            stroke: var(--dark_grey);
+          }
+        }
+      }
+    }
+  }
+
+  &_badValidate {
+    border-color: var(--red) !important;
+  }
+
+  // &__error {
+  //   color: var(--red);
+  //   font-size: 12px;
+  //   margin: 0;
+  //   margin-bottom: -10px;
+  //   text-align: justify;
+  // }
+
+  // &_icon {
+  //   position: relative;
+
+  //   > input {
+  //     padding-left: 40px;
+  //   }
+
+  //   > svg {
+  //     position: absolute;
+  //     top: 7px;
+  //     left: 10px;
+  //     width: 25px;
+  //     height: 25px;
+  //   }
+  // }
+}

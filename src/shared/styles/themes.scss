@@ -1,0 +1,61 @@
+.dark {
+  //   --background-color: var(--black);
+  --menu-background: rgba(37, 40, 48, 0.8);
+  --menu-icon-fill: #a3a9ba;
+  --background-color: linear-gradient(180deg, #262930 0%, #181818 100%);
+  --logo-font-color: var(--white);
+
+  --logo-path: url("../images/png/logo_dark.png");
+
+  --header_background_image: url("../images/png/backgroung_header_dark.png");
+
+  --text-accent-color: var(--white);
+  --text-secondary-color: var(--light-grey);
+
+  --backgound-color-card: var(--dark-grey);
+
+  --background-color-button: #2f3237;
+  --text-color-button: var(--white);
+
+  --background-color-input: var(--dark-grey);
+  --text-color-input: var(--white);
+
+  --background-color-check-toggle: var(--orange);
+  --background-color-toggle: var(--light-grey);
+  --background-color-tumbler-toggle: var(--white);
+
+  //Картинки приемов пищи
+  --breakfast-image-src: url("../images/png/breakfast_dark.png");
+  --lanch-image-src: url("../images/png/lanch_dark.png");
+  --dinner-image-src: url("../images/png/dinner_dark.png");
+  --snack-image-src: url("../images/png/snack_dark.png");
+}
+
+.light {
+  --background-color: var(--white);
+  --menu-icon-fill: #3f424f;
+  --menu-background: rgba(111, 116, 129, 0.54);
+  --logo-path: url("../images/png/logo_ligh.png");
+  --logo-font-color: var(--dark-grey);
+  --header_background_image: url("../images/png/background_header_light.png");
+
+  --text-accent-color: var(--black);
+  --text-secondary-color: var(--light-grey);
+  --backgound-color-card: var(--white);
+
+  --background-color-button: #d7d7d9;
+  --text-color-button: var(--blakc);
+
+  --background-color-input: #d7d7d9;
+  --text-color-input: var(--black);
+
+  --background-color-check-toggle: var(--orange);
+  --background-color-toggle: var(--light-grey);
+  --background-color-tumbler-toggle: var(--white);
+
+  //Картинки приемов пищи
+  --breakfast-image-src: url("../images/png/breakfast_light.png");
+  --lanch-image-src: url("../images/png/lanch_light.png");
+  --dinner-image-src: url("../images/png/dinner_light.png");
+  --snack-image-src: url("../images/png/snack_light.png");
+}

@@ -1,0 +1,55 @@
+.button {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  line-height: 16px;
+  width: auto;
+  min-height: 45px !important;
+  font-size: 18px;
+  font-family: "Poppins";
+  padding: 0 20px;
+
+  color: var(--text-color-button);
+  gap: 15px;
+  background-color: var(--background-color-button);
+
+  > svg {
+    width: 30px;
+    overflow: visible;
+  }
+
+  &_size {
+    &_big {
+      height: 45xp;
+
+      > svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &_small {
+      width: 35px !important;
+      height: 35px !important;
+      background-color: transparent;
+
+      min-height: 35px !important;
+      max-height: 35px !important;
+
+      min-width: 35px !important;
+      max-width: 35px !important;
+      padding: 0;
+    }
+  }
+
+  &_disable {
+    &:hover {
+      cursor: auto;
+    }
+  }
+}

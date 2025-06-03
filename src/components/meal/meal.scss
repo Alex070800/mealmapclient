@@ -1,0 +1,80 @@
+.meal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    > p {
+      font-size: 18px;
+      color: var(--text-accent-color);
+      font-weight: 700;
+    }
+  }
+
+  &__props {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__prop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    > svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    > span {
+      color: var(--text-secondary-color);
+    }
+  }
+
+  &__image {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    &_image {
+      &_breakfast {
+        background-image: var(--breakfast-image-src);
+      }
+
+      &_lanch {
+        background-image: var(--lanch-image-src);
+      }
+
+      &_dinner {
+        background-image: var(--dinner-image-src);
+      }
+
+      &_snack {
+        background-image: var(--snack-image-src);
+      }
+    }
+  }
+}
+
+.day-page > .card:nth-child(2n) {
+  .meal__image {
+    order: 1 !important;
+  }
+
+  .meal__info {
+    order: 2 !important;
+  }
+}

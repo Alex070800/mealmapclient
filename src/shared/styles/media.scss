@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+    header{
+        display: none !important;
+    }
+
+    footer{
+        display: block;
+    }
+  }

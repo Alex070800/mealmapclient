@@ -1,0 +1,20 @@
+.top-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  > p {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-secondary-color);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    > span {
+      font-weight: 500;
+      color: var(--text-accent-color);
+      font-size: 16px;
+    }
+  }
+}
